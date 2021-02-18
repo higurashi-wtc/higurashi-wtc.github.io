@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Typora | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://higurashi-wtc.github.io/favicon.ico?v=1613657183621">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://higurashi-wtc.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://higurashi-wtc.github.io">
+        <img class="avatar" src="https://higurashi-wtc.github.io/images/avatar.png?v=1613657183621" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://higurashi-wtc.github.io">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Typora</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-18</span>
+            
+          </div>
+          <div class="post-content">
+            <p><strong>目录</strong></p>
+<p>[toc]</p>
+<h2 id="标题">标题</h2>
+<p>用一到六个<code>#</code>作为一行的开头对应标题的六个等级（注意”<code>#</code>后面的一个空格）</p>
+<pre><code class="language-markdown"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<h2 id="引用">引用</h2>
+<p>当输入<code>&gt;</code>会生成一个引用块。</p>
+<p><strong>例如</strong></p>
+<pre><code class="language-markdown">&gt;我能吞下玻璃而不伤身体
+</code></pre>
+<p><strong>效果</strong></p>
+<blockquote>
+<p>我能吞下玻璃而不伤身体</p>
+</blockquote>
+<h2 id="列表">列表</h2>
+<h3 id="无序列表">无序列表</h3>
+<p>输入<code>* list item 1</code>创建无序列表。</p>
+<p><strong>例如</strong></p>
+<pre><code class="language-markdown">* C
+* Python
+* Java
+</code></pre>
+<p><strong>效果</strong></p>
+<ul>
+<li>C</li>
+<li>Python</li>
+<li>Java</li>
+</ul>
+<h3 id="有序列表">有序列表</h3>
+<p>输入<code>1. list item 1</code> 创建有序序列</p>
+<p><strong>例如</strong></p>
+<pre><code class="language-markdown">1. C
+2. Python
+3. Java
+</code></pre>
+<p><strong>效果</strong></p>
+<ol>
+<li>C</li>
+<li>Python</li>
+<li>Java</li>
+</ol>
+<h3 id="任务列表">任务列表</h3>
+<p>输入<code>-[ ]</code>或<code>-[x]</code>表示完成或未完成</p>
+<p><strong>例如</strong></p>
+<pre><code class="language-markdown">- [ ] 看书
+- [x] 锻炼
+</code></pre>
+<p><strong>效果</strong></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9353260"><label class="task-list-item-label" for="task-item-9353260"> 看书</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-7014447"><label class="task-list-item-label" for="task-item-7014447"> 锻炼</label></li>
+</ul>
+<h2 id="代码块">代码块</h2>
+<p>输入```并按下回车创建代码块。</p>
+<p>在```之后添加语言的名称可以对代码中关键字进行高亮。</p>
+<p><strong>例如</strong></p>
+<pre><code class="language-markdown">​```ruby
+require 'redcarpet'
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+​```
+</code></pre>
+<p><strong>效果</strong></p>
+<pre><code class="language-ruby">require 'redcarpet'
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+</code></pre>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://higurashi-wtc.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
