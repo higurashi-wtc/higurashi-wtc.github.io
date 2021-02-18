@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://higurashi-wtc.github.io</id>
-    <title>寒蝉鸣泣之时</title>
-    <updated>2021-02-18T14:24:17.214Z</updated>
+    <title>鸣泣之时。</title>
+    <updated>2021-02-18T14:24:45.949Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://higurashi-wtc.github.io"/>
     <link rel="self" href="https://higurashi-wtc.github.io/atom.xml"/>
     <logo>https://higurashi-wtc.github.io/images/avatar.png</logo>
     <icon>https://higurashi-wtc.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 寒蝉鸣泣之时</rights>
+    <rights>All rights reserved 2021, 鸣泣之时。</rights>
     <entry>
         <title type="html"><![CDATA[Typora]]></title>
         <id>https://higurashi-wtc.github.io/post/typora/</id>
@@ -70,8 +70,8 @@
 </code></pre>
 <p><strong>效果</strong></p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-7271068"><label class="task-list-item-label" for="task-item-7271068"> 看书</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1407510"><label class="task-list-item-label" for="task-item-1407510"> 锻炼</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-3763978"><label class="task-list-item-label" for="task-item-3763978"> 看书</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8339603"><label class="task-list-item-label" for="task-item-8339603"> 锻炼</label></li>
 </ul>
 <h2 id="代码块">代码块</h2>
 <p>输入```并按下回车创建代码块。</p>
