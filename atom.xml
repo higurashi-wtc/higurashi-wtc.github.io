@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://higurashi-wtc.github.io</id>
-    <title>鸣泣之时。</title>
-    <updated>2021-02-19T03:35:35.111Z</updated>
+    <title>随便玩玩</title>
+    <updated>2021-02-19T03:50:38.652Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://higurashi-wtc.github.io"/>
     <link rel="self" href="https://higurashi-wtc.github.io/atom.xml"/>
-    <subtitle>这时只要微笑就可以了。</subtitle>
+    <subtitle>互联网的一个角落。</subtitle>
     <logo>https://higurashi-wtc.github.io/images/avatar.png</logo>
     <icon>https://higurashi-wtc.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 鸣泣之时。</rights>
+    <rights>All rights reserved 2021, 随便玩玩</rights>
 </feed>
